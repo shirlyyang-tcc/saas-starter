@@ -6,6 +6,8 @@ import { getDictionary } from '@/lib/dictionaries'
 import { Locale, locales } from '@/lib/i18n'
 import { getHighlightedText } from '@/lib/text-highlight'
 
+export const dynamic = 'force-dynamic'
+
 export async function generateStaticParams() {
   return locales.map((locale) => ({
     lang: locale
