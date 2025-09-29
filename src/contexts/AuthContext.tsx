@@ -27,9 +27,10 @@ export function AuthProvider({ children, initialUser }: AuthProviderProps) {
         setUser(user)
         setLoading(false)
       })
-    
     }
   }, [initialUser])
+
+
 
   const signOut = async () => {
     const { signOut: signOutUser } = await import('@/lib/auth')
